@@ -1,15 +1,23 @@
-body{
-    font-family: Segoe UI;
-    background-color: #0a968a;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
+* {
+
+  font-family: Segoe UI;
+  background-color: #0a968a;
+  color: rgb(92, 3, 73);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5%;
+  text-align: center;
+  font-weight: 600;
+ 
+
 }
 
-
 .header{
+
+  
     width: 480px;
     margin: 0 auto;
+  
 }
 
 
@@ -21,13 +29,17 @@ body{
 .iniciales span{
 color: rgb(255, 255, 255);
 font-family: 'Glúten' ;
+
 }
 
 
 nav{
-    padding: 2em;
+    position: fixed;
+    padding: 1em;
     display: flex;
     justify-content: space-around; 
+    background-color: transparent;
+     
 }
 
 
@@ -37,8 +49,8 @@ ul{
 }
 
 
-
 #menu li>a{
+
     background-color: #ec96bb;
     color: white;
     padding: 18px;
@@ -46,9 +58,11 @@ ul{
     text-decoration: none;
     min-width: 100px;
     border-radius: 18px;
+    
+    
   }
 
-  #menu>li a:hover{
+ #menu>li a:hover{
 
 color: rgb(38, 3, 78);
 background-color: rgb(9, 252, 227);
@@ -56,23 +70,28 @@ background-color: rgb(9, 252, 227);
 
 
 #menu>li {
+
     float: left;
-    text-align: center
-  }
+    text-align: center;
+    
+  
+}
 
 
 #menu>li>ul{
-    display: none;
-    
-  }
-  #menu>li:hover>ul{
+
+  display: none;
+}
+
+
+#menu>li:hover>ul{
 
 display: block;
 position: absolute;
+}
 
 
-  }
-.fotografia{
+.fotografia , .logo {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -82,7 +101,7 @@ position: absolute;
  }
 
 
-.main {
+.main  {
 
 margin: 0 auto;
 width: 80vw;
@@ -92,55 +111,31 @@ grid-template-columns: repeat(2,1fr);
 align-items: center;
 }
 
-.minha-historia {
 
+.minhahistoria , .practicas{
+
+margin-left: 10%;
+margin-right: 10%;
 font-family: Segoe UI;
-color: rgb(58, 10, 58);
-font-size: 30px;
-margin: 0 auto;
-width: 80vw;
-height: 95vh;
+color: rgb(39, 2, 39);
+font-size: 25px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
-align-items: center;
-background-color: rgb(243, 182, 243);
-border: rgb(77, 3, 34) 3px solid;
-border-radius: 13px;
-text-transform: none;
-
+text-align: center; 
 
 }
 
 
-.practicas {
+.container__github {
 
-    color: rgb(37, 1, 37);
-    font-size: 30px;
-    margin: 0 auto;
-    width: 80vw;
-    height: 95vh;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    text-align: center;
-    list-style: none;
+  text-align: center;
+  list-style: none;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  font-size: 20px;
+  background-color: #0a968a;
+  color: #0a968a;
+  line-height : 50px;
+  
+  }
 
-
-}
-
-
-.logos{
-
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  padding: 10px; margin: 30px;
-  border: rgb(77, 3, 34) 3px solid;
-
-
-}
-.git , .html , .css{
-
-  color: black;
-
-}
