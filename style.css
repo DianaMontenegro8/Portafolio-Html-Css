@@ -1,94 +1,61 @@
 * {
 
   font-family: Segoe UI;
-  background-color: #0a968a;
   color: rgb(92, 3, 73);
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 5%;
   text-align: center;
   font-weight: 600;
- 
-
-}
-
-.header{
-
-  
-    width: 480px;
-    margin: 0 auto;
-  
-}
-
-
-.iniciales{
-    margin: 0.4em;
-}
-
-
-.iniciales span{
-color: rgb(255, 255, 255);
-font-family: 'Glúten' ;
-
-}
-
-
-nav{
-    position: fixed;
-    padding: 1em;
-    display: flex;
-    justify-content: space-around; 
-    background-color: transparent;
-     
-}
-
-
-ul{
-    list-style: none;
-    text-align: center; 
-}
-
-
-#menu li>a{
-
-    background-color: #ec96bb;
-    color: white;
-    padding: 18px;
-    display: block;
-    text-decoration: none;
-    min-width: 100px;
-    border-radius: 18px;
-    
-    
   }
 
- #menu>li a:hover{
-
-color: rgb(38, 3, 78);
-background-color: rgb(9, 252, 227);
-  }
-
-
-#menu>li {
-
+.iniciais{
+    margin: 0.5em;
     float: left;
-    text-align: center;
-    
-  
+    }
+
+.iniciais span{
+    color: rgb(255, 13, 235);
+    font-family: 'Glúten' ;
+   }
+
+
+.menu{
+      position: fixed;
+      margin-left: 20% ;
+      margin-top: 30px;
+      text-align: center;
+}
+
+a{
+     border: rgb(216, 102, 165) 3px solid;
+     border-radius: 8px;
+     margin: 18px;
+     padding: 8px;
+     background-color: #0a968a;
+}
+
+.menu>li{
+     float: left;
+    text-decoration: none;
+    list-style: none;
 }
 
 
-#menu>li>ul{
+.menu>li :hover{
+     color: rgb(20, 174, 245);
 
-  display: none;
-}
+   }
+
+.menu>li>ul{
+     display: none;
+    }
 
 
-#menu>li:hover>ul{
+.menu>li:hover>ul{
 
-display: block;
-position: absolute;
-}
+     display: block;
+    position: absolute;
+    }
 
 
 .fotografia , .logo {
@@ -102,9 +69,9 @@ position: absolute;
 
 
 .main  {
-
+    background-color: #0a968a;
 margin: 0 auto;
-width: 80vw;
+width: 100vw;
 height: 80vh;
 display: grid;
 grid-template-columns: repeat(2,1fr);
